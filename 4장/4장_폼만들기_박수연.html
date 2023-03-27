@@ -8,7 +8,7 @@
     </head>
     <body>
         <h1>사용자 입력을 위한 폼</h1>
-        <form name="myForm" method="get" action="result.html">
+        <form name="myForm" method="get" action="result.html"> <!--post는 비밀번호를 주소창에 보이지 않게 함--> 
             <fieldset> <!--구분을 해줌-->
                 <legend>필수 입력</legend>
                 [이름] : <input type="text" name="user_name" id="user_name" placeholder="이름을 입력하세요." autofocus required=""><br>
@@ -17,8 +17,113 @@
             </fieldset>
 
             <br><br>
-            <input type="submit" value="전송">
+
+            <fieldset>
+                <legend>선택 입력</legend>
+                [학년] :
+                <input type="radio" name="grade" id="grade1" value="1학년" checked> 1학년 <!--1학년이 자동체크 됨-->
+                <input type="radio" name="grade" id="grade2" value="2학년"> 2학년 <!--선택한 value값이 주소창에 보내짐-->
+
+                <input type="radio" name="grade" id="grade3" value="3학년">
+                <label for="grade3">3학년</label>
+                <input type="radio" name="grade" id="grade4" value="4학년">
+                <label for="grade4">4학년</label>
+
+                <br><br>
+                <input type="checkbox" name="ck_c" id="" value="c_program">
+                <label for="ck_c">c언어</label> <!--for 와 id가 연결되도록 작성함-->
+                <input type="checkbox" name="ck_python" id="" value="python">
+                <label for="ck_python">파이썬</label>
+
+                <label>
+                    <input type="checkbox" name="ck_web" id="ck_web" value="webprogram"> 웹제작 <!--하나로 묶어서도 가능--> <!--화면 구성에 따라 하나로 묶어서 작성하거나 연결되도록 작성-->
+                </label>
+                <label>
+                    <input type="checkbox" name="ck_sw" id="ck_sw" value="swProgram">S/W 프로그래밍
+                </label>
+
+                <br><br>
+
+                <label for="grade">[학년] : </label>
+                <select name="grade" id="grade">
+                    <option value="1">1학년</option> <!--벨류는 주소에 전송되는 값-->
+                    <option value="2">2학년</option>
+                    <option value="3">3학년</option>
+                    <option value="4" selected>4학년</option> <!--나열해야하는 게 많을때 사용--> <!--기본으로 4학년이 체크됨--> <!--벨유가 꼭 있어야함-->
+
+                </select>
+
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>분화된 텍스트 필드</legend>
+                <label for="user_search">[검색]</label>
+                <input type="search" name="user_search" id="user_search"> <!--x버든을 만듦-->
+
+                <br>
+
+                <label for="">[홈페이지 주소] :</label>
+                <input type="ur" name="user_url" id="user_url"> <!--사용자의 편의를 위해 type을 url로 지정 : 키패트 변환-->
+
+                <br>
+
+                <label for="user_mail">[E-mail] : </label>
+                <input type="email" name="user_mail" id="user_mail">
+                
+                <br>
+
+                <label for="user_tel">[전화번호] : </label>
+                <input type="tel" name="user_tel" id="user_tel">
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>기타</legend>
+                <label for="user_num">주문 개수</label>
+                <input type="number" name="user_num" id="user_num" min="1" max="100" value="1"> <!--숫자만 입력됨 , 화살표로 숫자 조절 가능--> <!--최소 1개부터 최대 100개까지-->
+
+            <br>
+
+            <label for="user_ran">진행 단계</label>
+            하<input type="range" name="user_ran" id="user_ran" min="1" max="10" value="1">상
+            <br>
+
+            <label for="user_date">[제출일] : </label>
+            <input type="date" name="user_date" id="user_date"> <!--캘린더-->
+            <br>
+            <label for="user_time">[제출 시간] : </label>
+            <input type="time" name="user_time" id="user_time" value="09:00"></label>
+
+            <br>
+            <label for="user_color">[선호 색깔] : </label>
+            <input type="color" name="user_color" id="user_color"></label>
+
+            <br>
+            <label for="user_info">[자기 소개] : </label>
+            <textarea name="user_info" id="user_info" cols="50" rows="10"></textarea> <!--사용자가 입력하는 내용이기 때문에 띄어쓰기 금지--> <!--10줄 50칸-->
+        </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>버튼</legend>
+                <input type="submit" value="전송">
             <input type="reset" value="다시입력">
+            <br><br>
+
+            <input type="button" value="컴퓨터공학부" onclick="javascript:window.open('https://computer.silla.ac.kr')"> <!--자바스크립트로 주소창 열기-->
+            <br>
+
+            <input type="hidden" name="emailchk" value="N"> <!--hidden 사용자에겐 보여지지 않음, hidden에 있는 value값을 주소창에 전달-->
+            </fieldset>
+
+            <br><br>
+
         </form>
     </body>
 </html>
