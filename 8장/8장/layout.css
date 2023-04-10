@@ -1,0 +1,52 @@
+body {
+    font-family: "맑은 고딕", "고딕", "굴림"; /*글꼴이 없으면 차례대로 적용을 함*/
+}
+
+header {
+    background-color: palevioletred; /*내가 지정한 색깔로 배경*/
+    width: 80em;
+    margin-left: auto; /*헤더를 가운데 정렬*/
+    margin-right: auto; /* auto를 써서 바깥쪽 여백을 가운데로 지정*/
+    padding: 10px; /*안쪽여백을 10px줌*/
+    /*padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px; /*위 아래 왼쪽 오른쪽을 맞춰서 가운데로 만듦*/
+    /*padding: 10px 30px 50px 100px; /* 위, 오른쪽, 아래, 왼쪽을 내가 지정한 값만큼 지정, top을 기준으로 시계방향으로 값을 지정함*/
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2em;
+    /*background-color: blanchedalmond; /*h1에 색깔을 입힘*/
+}
+
+/*header의 자손인 h1 태그에 적용 */ /*띄어쓰기는 조상과 자손관계, >는 부모와 자식관계*/ /* 명확하게 명시하기*/
+header h1 {
+    color: rgb(0, 0, 0);
+    width: 40%;
+    float: left;
+}
+
+/* header의 자식인 nav 태그에 적용함 */
+header > nav {
+    /*background-color: rgb(164, 101, 190);*/
+    width: 50%;
+    float: right; /* float 둥둥 떠 있는 상태 */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    /*background-color: rgb(245, 177, 236);*/
+    display: inline;
+    float: left;
+    margin: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: bisque;
+}
