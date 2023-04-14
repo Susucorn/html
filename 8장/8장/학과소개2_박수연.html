@@ -7,6 +7,37 @@
         <title>컴퓨터공학부 - 박수연</title>
 
         <link rel="stylesheet" type="text/css" href="layout.css"> <!--외부의 css파일을 연결-->
+
+        <style> <!--내부 스타일 지정-->
+            article {
+                /*background-color: aqua;*/
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px;
+            }
+
+            #com1 {
+                border: 3px solid rgb(78, 40, 94);
+                border-radius: 10px;
+            }
+
+            #com2 {
+                border: 5px dotted rgb(119, 18, 77);
+                border-radius: 20px;
+            }
+
+            #com3 {
+                border: 10px double rgb(77, 12, 94);
+                border-top-left-radius: 30px; /*--윗쪽, 왼쪽 모서리 */
+                border-bottom-right-radius: 30px;
+            }
+
+            .red_point {
+                    color: red;
+                    font-weight: 10;
+            }
+        </style>
     </head>
     <body>
         <!--로고나 메뉴를 작성하는 영역-->
@@ -15,10 +46,10 @@
             <!--메뉴 작성-->
             <nav>
                 <ul>
-                    <li><a href="">학부소개</a></li>
-                    <li><a href="">컴퓨터공학전공</a></li>
-                    <li><a href="">메타버스전공</a></li>
-                    <li><a href="">교육목표</a></li>
+                    <li><a href="#com1">학부소개</a></li> <!--id를 이용해 책갈피 기능으로 만듦, 바로 가기 기능-->
+                    <li><a href="#com2">컴퓨터공학전공</a></li>
+                    <li><a href="#com3">메타버스전공</a></li>
+                    <li><a href="#com4">교육목표</a></li>
                 </ul>
             </nav>
         </header>
@@ -26,7 +57,7 @@
         <!--학부 소개 메인 영역-->
         <section>
             <!--학부 소개 컨텐츠 영역-->
-            <article>
+            <article id="com1">
                 <h2>학부소개</h2>
                 <p>본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
                     2023년 현재까지 34년 동안 2천여 명의 졸업생을 배출하였습니다. <br>
@@ -39,7 +70,7 @@
             </article>
             
             <!--컴퓨터공학전공 소개 컨텐츠 영역-->
-            <article>
+            <article id="com2">
                 <h2>컴퓨터공학전공</h2>
                 <h3>소개</h3>
                 <p>
@@ -59,7 +90,7 @@
             </article>
             
             <!--메타버스전공 소개 컨텐츠 영역-->
-            <article>
+            <article id="com3">
                 <h2>메타버스전공</h2>
                 <h3>소개</h3>
                 <p>
@@ -80,7 +111,7 @@
             </article>
             
             <!--교육 목표 컨텐츠 영역-->
-            <article>
+            <article id="com4">
                 <h2>교육 목표</h2>
                 <p>
                     <ul>
