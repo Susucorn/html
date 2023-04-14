@@ -1,38 +1,41 @@
 body {
-    font-family: "맑은 고딕", "고딕", "굴림"; /*글꼴이 없으면 차례대로 적용을 함*/
+    font-family: "맑은 고딕","고딕","굴림"; 
 }
 
 header {
-    background-color: palevioletred; /*내가 지정한 색깔로 배경*/
+    background-color: rgb(111, 8, 108);
     width: 80%;
-    margin-left: auto; /*헤더를 가운데 정렬*/
-    margin-right: auto; /* auto를 써서 바깥쪽 여백을 가운데로 지정*/
-    padding: 10px; /*안쪽여백을 10px줌*/
-    /*padding-left: 30px;
-    padding-right: 30px;
+    /* text-align: center;  글귀 센터 옮기기 */
+    margin-left: auto;   /* 배경색상 옮기기 */
+    margin-right: auto;
+    padding: 10px;    /*안쪽 여백 주기*/   
+    /* padding-left: 30px;
+    padding-right: 20px;
     padding-top: 10px;
-    padding-bottom: 20px; /*위 아래 왼쪽 오른쪽을 맞춰서 가운데로 만듦*/
-    /*padding: 10px 30px 50px 100px; /* 위, 오른쪽, 아래, 왼쪽을 내가 지정한 값만큼 지정, top을 기준으로 시계방향으로 값을 지정함*/
+   padding-bott om: 20px; */
     overflow: hidden;
+
+    /* padding: 10px 30px 60px 100px; 10:위 30:오른쪽 50:아래 100:왼쪽 탑기준 시계방향  */
 }
 
 h1 {
     font-size: 2em;
-    /*background-color: blanchedalmond;*/
+    /* background-color: red; */
 }
-
-/*header의 자손인 h1 태그에 적용 */ /*띄어쓰기는 조상과 자손관계, >는 부모와 자식관계*/ /* 명확하게 명시하기*/
+/* 헤더 의 자손인 h1 태그에 적용 */
 header h1 {
-    color: rgb(0, 0, 0);
+
+    color: rgb(230, 189, 242);
     width: 40%;
     float: left;
-}
 
-/* header의 자식인 nav 태그에 적용함 */
+}
+/*  헤더의 자식인 nav 태그에 적용 */
+
 header > nav {
-    /*background-color: rgb(164, 101, 190);*/
-    width: 50%;
-    float: right; /* float 둥둥 떠 있는 상태 */
+    /* background-color: blueviolet; */
+    width: 60%;
+    float: right;
 }
 
 nav ul {
@@ -40,70 +43,62 @@ nav ul {
 }
 
 nav ul li {
-    /*background-color: rgb(245, 177, 236);*/
+    /* background-color: coral; */
     display: inline;
     float: left;
     margin: 15px;
 }
 
-nav ul li a {
+a {
+    /* nav a    or    nav ul li  a*/
     text-decoration: none;
-    color: bisque;
-}
+    color: rgb(253, 250, 253);
 
+}
 section {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto; /* 영역 가운데 정렬 */
-    border: 5px solid #333; /* 테두리 선 종류, 테두리 선 색상, 밑에 세 개를 요약한 것 */
-    /*border-width: ;
-    border style: ;
-    border color: : ; */
-    padding: 20px; /* 안쪽 여백 */
+    margin-left: auto; /*영역 가운데 정렬*/  
+    margin-right: auto; /*영역 가운데 정렬*/   
+    border: 5px solid #333; /*테두리 색상 # */  
+    /* border-width: ;
+    border-style: ;
+    border-color: ; */
+    padding: 5px; /*안쪽 여백글자 띄우기*/
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.8em; /* 글자 안으로 둥글게 */
     padding: 15px;
     border-radius: 3px;
-    box-shadow: -3px 3px 3px 0px rgb(198,198,198);
+    box-shadow: -3px 3px 3px 3px rgb(198, 198, 198); /* 박스에 명암 넣기 (쉐도우)*/
 }
 
 h3 {
     font-size: 1.3em;
-    padding:15px 0px 15px 10px;
-    border-left: 8px solid rgb(221, 33, 190);
-    margin-left: 20px;
+    padding: 15px 0px 15px 10px;
+    border-left: 8px solid rgb(242, 56, 149);
 }
-
 p, dd {
     font-size: 15px;
     line-height: 30px;
     margin: 20px;
 }
-
 dl {
     line-height: 30px;
     padding-left: 30px;
     margin-right: 30px;
 }
-
 dt {
     font-size: 1.1em;
     font-weight: bold;
-    color: orange;
+    color: rgb(212, 135, 236);
 }
-
-article ul {
-    line-height: 30px;
-}
-
-footer p {
-    background-color: rgb(0, 0, 0);
-    width: 80%;
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:black;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    color:white;
-    padding: 10px;
+    width: 80%;
+    color: white;
 }
