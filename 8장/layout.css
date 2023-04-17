@@ -1,0 +1,104 @@
+body {
+    font-family: "맑은 고딕","고딕","굴림"; 
+}
+
+header {
+    background-color: rgb(111, 8, 108);
+    width: 80%;
+    /* text-align: center;  글귀 센터 옮기기 */
+    margin-left: auto;   /* 배경색상 옮기기 */
+    margin-right: auto;
+    padding: 10px;    /*안쪽 여백 주기*/   
+    /* padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 10px;
+   padding-bott om: 20px; */
+    overflow: hidden;
+
+    /* padding: 10px 30px 60px 100px; 10:위 30:오른쪽 50:아래 100:왼쪽 탑기준 시계방향  */
+}
+
+h1 {
+    font-size: 2em;
+    /* background-color: red; */
+}
+/* 헤더 의 자손인 h1 태그에 적용 */
+header h1 {
+
+    color: rgb(230, 189, 242);
+    width: 40%;
+    float: left;
+
+}
+/*  헤더의 자식인 nav 태그에 적용 */
+
+header > nav {
+    /* background-color: blueviolet; */
+    width: 60%;
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    /* background-color: coral; */
+    display: inline;
+    float: left;
+    margin: 15px;
+}
+
+a {
+    /* nav a    or    nav ul li  a*/
+    text-decoration: none;
+    color: rgb(253, 250, 253);
+
+}
+section {
+    width: 80%;
+    margin-left: auto; /*영역 가운데 정렬*/  
+    margin-right: auto; /*영역 가운데 정렬*/   
+    border: 5px solid #333; /*테두리 색상 # */  
+    /* border-width: ;
+    border-style: ;
+    border-color: ; */
+    padding: 5px; /*안쪽 여백글자 띄우기*/
+}
+
+h2 {
+    font-size: 1.8em; /* 글자 안으로 둥글게 */
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: -3px 3px 3px 3px rgb(198, 198, 198); /* 박스에 명암 넣기 (쉐도우)*/
+}
+
+h3 {
+    font-size: 1.3em;
+    padding: 15px 0px 15px 10px;
+    border-left: 8px solid rgb(242, 56, 149);
+}
+p, dd {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 20px;
+}
+dl {
+    line-height: 30px;
+    padding-left: 30px;
+    margin-right: 30px;
+}
+dt {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(212, 135, 236);
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: white;
+}
