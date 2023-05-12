@@ -1,0 +1,87 @@
+/* 문서 전체 글꼴은 맑은 고딕. 바깥여백 5px */
+* {
+    font-family: "맑은 고딕";
+    margin: 5px;
+}
+
+/* header와 footer 영역 - 안쪽 여백 20, 배경 색상, 가운데 정렬 */
+header, footer {
+    padding: 20px;
+    background-color: rgb(208, 158, 255);
+    text-align: center; /* div 가운데 정렬은 auto */
+}
+
+/* nav 영역 - 배경 색상, 가운데 정렬, 글자 크기 18, 진하게, 안쪽 여백 20px*/
+nav {
+    background-color: rgb(147, 248, 214);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* 하이퍼링크 영역 - 밑줄 X, 가로길이 100, 세로길이 30, 안쪽여백 20*/
+a {
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    /*background-color: rgb(42, 165, 155);*/
+    display: inline-block; /* 인라인 요소는 가로 세로 지정이 안되기 때문에 반드시 인라인 블록요소로 바꿔야한다 ** */
+}
+
+a:link, a:visited {     /* 하이퍼링크 페이지를 방문하였을때 색깔 지정*/
+    color: black;
+}
+
+a:hover, a:active {     /* 마우스를 갖다 댔을때 색깔 지정 */
+    color: beige;
+    background-color: blue;
+    text-decoration: underline;  /* 아래쪽에 선이 생김 */
+}
+
+/* 배경 색상, 테두리 , 가로길이 48, 세로길이 200, 가로 정렬 */
+section {
+    background-color: rgb(139, 99, 177);
+    border: 3px solid black;
+    width: 48%;
+    height: 200px;
+    float: left;    /* 가로 정렬, ** 섹션에서부터 밑에까지 스타일 정렬됨, 아래쪽 스타일 지정 안되고 싶으면 반드시 스타일 지정 안한다고 해야함** */
+}
+
+/* footer 부분에 float 적용 X clear 적용하기 */
+aside, footer {
+    clear: both;
+}
+
+/* 각 섹션의 제목 글자 색과 여백 동일 */
+.c1 {
+    color: bisque;
+    padding: 10px;
+}
+
+/* 각 섹션의 제목의 배경 색상은 다름 */
+#s1 > h1 {
+    background-color: rgb(207, 117, 203);
+}
+
+#s2 > h1 {
+    background-color: rgb(206, 103, 201);
+}
+
+#s3 > h1 {
+    background-color: rgb(170, 93, 166);
+}
+
+#s4 > h1 {
+    background-color: rgb(168, 97, 216);
+}
+
+#s5 > h1 {
+    background-color: rgb(182, 87, 206);
+}
+
+#s6 > h1 {
+    background-color: rgb(173, 69, 214);
+}
+
