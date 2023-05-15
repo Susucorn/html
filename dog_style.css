@@ -1,0 +1,95 @@
+body {
+    font-family: "맑은 고딕", "고딕", "굴림";
+}
+
+header {
+    background-color: blueviolet;
+    width: 80%;
+    margin-left: auto;  /* 영역 가운데로 */
+    margin-right: auto; /* 영역 가운데로 */
+    padding: 10px;  /* 안쪽 여백 */
+    height: 80px;
+}
+
+header h1 {
+    float: left;    /* 왼쪽에 띄움 */
+    color: beige;
+    padding-left: 20px;
+}
+
+header nav {
+    float: right;   /* 오른쪽에 띄움, 밑에 있는 태그 clear 시켜주기 */
+    padding-top: 20px;  /* nav 안에 있는 글자 위쪽 여백을 20px 줌 */
+}
+
+nav ul {
+    list-style: none;   /* 불릿 없앰 */   
+}
+
+nav li {
+    display: inline;    /* 화면에 보여지는 디스플레이를 인라인으로 적용 */
+    margin: 15px;
+}
+
+nav a {
+    color: azure;
+    text-decoration: none;  /* 글자 밑줄 지움 */
+    font-weight: bold;
+}
+
+article {
+    clear: both;
+    width: 80%;
+    margin-left: auto;  /* 영역 가운데로 */
+    margin-right: auto; /* 영역 가운데로 */
+    border: 5px solid black;
+    padding: 5px;
+}
+
+section {
+    column-count: 3;    /* 다단을 3개로 나눔 */
+    column-rule: 1px dotted rgb(122, 27, 230);
+    padding: 10px;
+}
+
+section h3 {
+    break-before: column;   /* h3 기준으로 해서 다단을 나눔 */
+    padding-left: 15px; /* 제목 안으로 들어가게 함 */
+}
+
+section dt {
+    padding-left: 20px;
+}
+
+section dt, section dd {
+    line-height: 30px;  /* 줄 간격 */
+}
+
+aside {
+    clear: both;
+    background-color: rgb(202, 159, 243);
+    width: 80%;
+    margin-left: auto;  /* 영역 가운데로 */
+    margin-right: auto; /* 영역 가운데로 */
+    padding: 10px;
+}
+
+aside h3 {
+    margin-left: 20px;
+}
+
+aside li {
+    margin-left: 30px;
+}
+
+footer {
+    clear: both;
+    color: azure;
+    background-color: black;
+    width: 80%;
+    height: 50px;
+    margin-left: auto;  /* 영역 가운데로 */
+    margin-right: auto; /* 영역 가운데로 */
+    padding: 10px;
+    text-align: center;  
+}
