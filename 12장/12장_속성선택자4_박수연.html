@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>속성 선택자 3 - 박수연</title>
+
+        <style>
+            ul {
+                list-style: none; /* 불릿 없앰 */         
+            }
+
+            li {
+                display: inline-block;  /* 인라인과 인라인블럭 차이점, 인라인 블럭은 가로 세로 지정이 가능 */
+                width: 120px;
+                margin: 10px;
+            }
+
+            li > a {
+                text-decoration: none;  /* 밑줄 없앰 */
+                color: black;
+                font-size: 14px;
+                padding: 5px 20px;
+
+            }
+
+            a[title |="us"] {
+                background: url(img/us.png) no-repeat left center;
+                padding: 5px 20px;
+            }    /* us가 타이틀에 포함된 것에 스타일 적용 ~=과 비슷*/
+
+            a[title |="jap"] {
+                background: url(img/jp.png) no-repeat left center;
+                padding: 5px 20px;
+            }    /* us가 타이틀에 포함된 것에 스타일 적용 ~=과 비슷*/
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>외국어서비스 :</li>
+            <li><a href="#" title="us">영어 : </a></li>
+            <li><a href="#" title="us-english">영어</a></li>
+            <li><a href="#" title="jap-anese">일본어</a></li>
+        </ul>
+    </body>
+</html>

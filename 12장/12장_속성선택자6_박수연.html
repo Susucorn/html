@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>속성 선택자 3 - 박수연</title>
+
+        <style>
+            ul {
+                list-style: none; /* 불릿 없앰 */         
+            }
+
+            li {
+                display: inline-block;  /* 인라인과 인라인블럭 차이점, 인라인 블럭은 가로 세로 지정이 가능 */
+                width: 120px;
+                margin: 10px;
+            }
+
+            li > a {
+                text-decoration: none;  /* 밑줄 없앰 */
+                color: black;
+                font-size: 14px;
+                padding: 5px 20px;
+
+            }
+
+            a[href $="hwp"] {
+                background: url(img/hwp_icon.gif) no-repeat left center;
+                padding: 5px 25px;
+            }    /* hwp 로 끝나는 글자에 스타일 적용 */
+
+            a[href $="xlsx"] {
+                background: url(img/ch.png) no-repeat left center;
+                padding: 5px 25px;
+            }    /* chin 단어로 시작하는 글자에 스타일 적용 */
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <h2>학과 소개 파일 다운로드</h2>
+            <li><a href="info.hwp" title="chinese">한글 파일</a></li>
+            <li><a href="info.xlsx" title="japanese">엑셀 파일</a></li>
+        </ul>
+    </body>
+</html>
