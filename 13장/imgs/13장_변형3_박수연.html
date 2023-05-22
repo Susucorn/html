@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform3 - 박수연</title>
+
+        <style>
+            .origin {
+                width: 210px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 40px;
+                float: left;
+            }
+
+            .rotate1:hover {  /* 여기에 마우스를 갖다대면 */
+                -webkit-transform: rotate(20deg);
+                -ms-transform: rotate(20deg);
+                -moz-transform: rotate(20deg);
+                -o-transform: rotate(20deg); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: rotate(20deg);    /*20도 만큼 시계 방향으로 회전*/
+            }
+
+            .rotate2:hover {  /* 여기에 마우스를 갖다대면 */
+                -webkit-transform: rotate(-40deg);
+                -ms-transform: rotate(-40deg);
+                -moz-transform: rotate(-40deg);
+                -o-transform:rotate(-40deg); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: rotate(-40deg);    /*40도 만큼 반시계 방향으로 회전*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="rotate1">
+                <img src="imgs/fruit.jpg"></imgs>
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="rotate2">
+                <img src="imgs/fruit.jpg"></imgs>
+            </div>
+        </div>
+    </body>
+</html>

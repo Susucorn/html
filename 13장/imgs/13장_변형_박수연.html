@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform1 - 박수연</title>
+
+        <style>
+            .origin {
+                width: 200px;
+                height: 134px;
+                border: 1px solid black;
+                margin: 40px;
+                float: left;
+            }
+
+            .movex:hover {  /* 여기에 마우스를 갖다대면 */
+                -webkit-transform: translateX(50px);
+                -ms-transform: translateX(50px);
+                -moz-transform: translateX(50px);
+                -o-transform: translateX(50px); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: translateX(50px);    /* x 좌표를 50 px 만큼 이동시킴 */
+            }
+
+            .movey:hover {  /* 여기에 마우스를 갖다대면 */
+                -webkit-transform: translateY(20px);
+                -ms-transform: translateY(20px);
+                -moz-transform: translateY(20px);
+                -o-transform: translateY(20px); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: translateY(20px);    /* y 좌표를 20 px 만큼 이동시킴 */
+            }
+
+            .movexy:hover {  /* 여기에 마우스를 갖다대면 */
+                -webkit-transform: translate(10px, 20px);
+                -ms-transform: translate(10px, 20px);
+                -moz-transform: translate(10px, 20px);
+                -o-transform: translate(10px, 20px); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: translate(10px, 20px);    /* x, y 좌표를 10px, 20 px 만큼 이동시킴 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="movex">
+                <img src="imgs/bus.jpg"></imgs>
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="movey">
+                <img src="imgs/bus.jpg"></imgs>
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="movexy">
+                <img src="imgs/bus.jpg"></imgs>
+            </div>
+        </div>
+    </body>
+</html>

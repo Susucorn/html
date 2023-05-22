@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform4 - 박수연</title>
+
+        <style>
+            .origin {
+                width: 210px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 40px;
+                float: left;
+                -webkit-perspective: 200px;
+                -ms-perspective: 200px;
+                -moz-perspective: 200px;
+                -o-perspective: 200px;
+                perspective: 200px;
+            }
+
+            .rotatex {
+                -webkit-transform: rotateX(20deg);
+                -ms-transform: rotateX(20deg);
+                -moz-transform: rotateX(20deg);
+                -o-transform: rotateX(20deg); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: rotateX(20deg);    /* x 좌표로 20도 만큼 회전 */
+            }
+
+            .rotatey {
+                -webkit-transform: rotateY(45deg);
+                -ms-transform: rotateY(45deg);
+                -moz-transform: rotateY(45deg);
+                -o-transform: rotateY(45deg); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: rotateY(45deg);    /* y 좌표로 20도 만큼 회전 */
+            }
+
+            .rotatez {
+                -webkit-transform: rotateZ(45deg);
+                -ms-transform: rotateZ(45deg);
+                -moz-transform: rotateZ(45deg);
+                -o-transform: rotateZ(45deg); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: rotateZ(45deg);    /* z 좌표로 20도 만큼 회전 */
+            }
+
+            .rotatexyz {
+                -webkit-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+                -ms-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+                -moz-transform: rotate3d(2.5, 1.2, -1.5, 45deg);
+                -o-transform: rotate3d(2.5, 1.2, -1.5, 45deg); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: rotate3d(2.5, 1.2, -1.5, 45deg); 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="rotatex">
+                <img src="imgs/fruit.jpg"></imgs>
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="rotatey">
+                <img src="imgs/fruit.jpg"></imgs>
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="rotatez">
+                <img src="imgs/fruit.jpg"></imgs>
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="rotatexyz">
+                <img src="imgs/fruit.jpg"></imgs>
+            </div>
+        </div>
+    </body>
+</html>

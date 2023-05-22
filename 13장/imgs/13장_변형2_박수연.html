@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform2 - 박수연</title>
+
+        <style>
+            .origin {
+                width: 210px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 40px;
+                float: left;
+            }
+
+            .scalex:hover {  /* 여기에 마우스를 갖다대면 */
+                -webkit-transform: scaleX(1.2);
+                -ms-transform: scaleX(1.2);
+                -moz-transform: scaleX(1.2);
+                -o-transform: scaleX(1.2); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: scaleX(1.2);    /* x 좌표를 1.2 만큼 이동시킴 */
+            }
+
+            .scaley:hover {  /* 여기에 마우스를 갖다대면 */
+                -webkit-transform: scaleY(1.5);
+                -ms-transform: scaleY(1.5);
+                -moz-transform: scaleY(1.5);
+                -o-transform: scaleY(1.5); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: scaleY(1.5);    /* y 좌표를 1.5 만큼 이동시킴 */
+            }
+
+            .scalexy:hover {  /* 여기에 마우스를 갖다대면 */
+                -webkit-transform: scale(0.7);
+                -ms-transform: scale(0.7);
+                -moz-transform: scale(0.7);
+                -o-transform: scale(0.7); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: scale(0.7);    /* x, y 좌표를 0.7 만큼 이동시킴 */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="scalex">
+                <img src="imgs/fruit.jpg"></imgs>
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="scaley">
+                <img src="imgs/fruit.jpg"></imgs>
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="scalexy">
+                <img src="imgs/fruit.jpg"></imgs>
+            </div>
+        </div>
+    </body>
+</html>

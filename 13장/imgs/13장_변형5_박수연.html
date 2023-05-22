@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform5 - 박수연</title>
+
+        <style>
+            .origin {
+                width: 160px;
+                height: 240px;
+                border: 1px solid black;
+                margin: 40px;
+                float: left;
+            }
+
+            .skew1:hover {
+                -webkit-transform: skewX(30deg);
+                -ms-transform: skewX(30deg);
+                -moz-transform: skewX(30deg);
+                -o-transform: skewX(30deg); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: skewX(30deg);    /**/
+            }
+
+            .skew2:hover {
+                -webkit-transform: skewY(15deg);
+                -ms-transform: skewY(15deg);
+                -moz-transform: skewY(15deg);
+                -o-transform: skewY(15deg); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: skewY(15deg);    /**/
+            }
+
+            .skew3:hover {
+                -webkit-transform: skew(-25deg, -15deg);
+                -ms-transform: skew(-25deg, -15deg);
+                -moz-transform: skew(-25deg, -15deg);
+                -o-transform: skew(-25deg, -15deg); /* 모든 브라우저의 하위 버전에서도 적용시킬수 있음, transform은 최신 브라우저에만 적용되기 때문 */
+                transform: skew(-25deg, -15deg);    /*이미지가 비틀어지는 느낌을 줌*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="skew1">
+                <img src="imgs/rose.jpg"></imgs>
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="skew2">
+                <img src="imgs/rose.jpg"></imgs>
+            </div>
+        </div>
+
+        <div class="origin">
+            <div class="skew3">
+                <img src="imgs/rose.jpg"></imgs>
+            </div>
+        </div>
+    </body>
+</html>
