@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>애니메이션3 - 박수연</title>
+
+        <style>
+           #box1 {
+                height: 60px;
+                margin-top: 50px;
+                margin-left: 100px;
+                padding: 20px;
+                animation-name: moving; /* 애니메이션 이름 */
+                animation-duration: 3s; /* 애니메이션 속도 */
+                animation-direction: normal; /* 애니메이션 방향, nomal은 애니메이션 실행 후 원래 위치로 돌아감 */
+                animation-iteration-count: infinite; /* 애니메이션 반복, 무한반복 */
+           }
+
+           @keyframes moving {
+                from {
+                    width: 200px;   /* 200px 로 시작 */
+                    background-color: rgb(203, 171, 233);
+                    transform: scale(0.5) rotate(15deg);  /* 크기를 0.5만큼 줄여서 15도 만큼 기울어진 채로 시작 */
+                    opacity: 0.5;   /* 흐림 */
+                }
+
+                to {
+                    width: 400px;   /* 400px 로 끝 */
+                    background-color: rgb(114, 78, 150);
+                    transform: scale(1) rotate(0deg);   /* 원래 크기, 원래 각도로 끝 */
+                }
+           }
+        </style>
+    </head>
+    <body>
+        <div id="box1">
+            <h3>CSS3 Animation</h3>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>애니메이션2 - 박수연</title>
+
+        <style>
+           div {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            float: left;
+           }
+
+           #box1 {
+            background-color: rgb(44, 116, 116);
+            border: 2px solid black;
+            animation-name: shape; /* 애니메이션 이름 지정 */
+            animation-duration: 3s; /* 애니메이션 속도 지정 */
+           }
+
+           #box2 {
+            background-color: rgb(163, 65, 139);
+            border: 2px solid black;
+            animation-name: rotate;
+            animation-duration: 5s;
+           }
+
+           @keyframes shape {   /* from 부터  시작해서 to 로 함 */
+                from {
+                    border: 2px solid red;
+                }
+
+                to {
+                    border: 2px solid red;
+                    border-radius: 50%;
+                }
+           }
+
+           @keyframes rotate {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(45deg);
+                }
+           }
+        </style>
+    </head>
+    <body>
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </body>
+</html>
