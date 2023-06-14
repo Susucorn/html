@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>상품 목록 - 박수연 </title>
+
+        <style>
+            ul {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            li {
+                position: relative;
+                float: left;
+                padding: 0px;
+                margin: 10px;
+                overflow: hidden;
+            }
+
+            li img {
+                margin: 0px;
+                padding: 0px;
+                float: left;
+                z-index: 5; /* 여러 개가 겹쳐지는 위치 */
+            }
+
+            .caption {
+                position: absolute; /* 이미지 위에 글자가 보임 */
+                top: 200px;
+                width: 300px;
+                height: 200px;
+                padding-top: 20px;
+                background-color: rgba(0, 0, 0, 0.6);
+                opacity: 0;
+                transition: all 0.2s ease-in-out;
+                z-index: 10;
+            }
+
+            li:hover .caption {
+                opacity: 1;
+                transform: translateY(-200px);
+            }
+
+            h2, p {
+                color: aliceblue;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>신상품 목록</h1>
+        <div id="container">
+            <ul>
+                <li>
+                    <img src="imgs/prod1.jpg">
+                    <div class="caption">
+                        <h2>상품 1</h2>
+                        <p>상품 1 설명 텍스트</p>
+                        <p>가격 : 25,000원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="imgs/prod2.jpg">
+                    <div class="caption">
+                        <h2>상품 2</h2>
+                        <p>상품 2 설명 텍스트</p>
+                        <p>가격 : 33,000원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="imgs/prod3.jpg">
+                    <div class="caption">
+                        <h2>상품 3</h2>
+                        <p>상품 3 설명 텍스트</p>
+                        <p>가격 : 12,000원</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
